@@ -48,7 +48,7 @@ function getMenu(command) {
                 ᚐ҉ᚐ .info
                 pronto más menú
                 Att: CEO`,
-                imagePath: null // No hay imagen para este comando
+                imagePath: './images/menu.png' // No hay imagen para este comando
             };
 
         case '.rangos':
@@ -67,7 +67,7 @@ function getMenu(command) {
         case '.ip':
             return {
                 text: 'Pronto la ip',
-                imagePath: null // No hay imagen para este comando
+                imagePath: './images/ip.png' // No hay imagen para este comando
             };
 
         case '.tienda':
@@ -79,25 +79,25 @@ function getMenu(command) {
         case '.comandos':
             return {
                 text: 'Información sobre el bot: Este bot puede responder a tus comandos.',
-                imagePath: null // No hay imagen para este comando
+                imagePath: './images/comandos.png' // No hay imagen para este comando
             };
 
         case '.dc':
             return {
                 text: 'Estamos en proceso',
-                imagePath: null // No hay imagen para este comando
+                imagePath: './images/dc.png' // No hay imagen para este comando
             };
 
         case '.comunidad':
             return {
                 text: 'Estamos en proceso',
-                imagePath: null // No hay imagen para este comando
+                imagePath: './images/comunidad.png' // No hay imagen para este comando
             };
 
         case '.canales':
             return {
                 text: 'Estamos en proceso',
-                imagePath: null // No hay imagen para este comando
+                imagePath: './images/canales.png' // No hay imagen para este comando
             };   
 
         case '.strems':
@@ -115,13 +115,13 @@ function getMenu(command) {
         case '.donar':
             return {
                 text: 'Estamos en proceso',
-                imagePath: null // No hay imagen para este comando
+                imagePath: './images/donar.png' // No hay imagen para este comando
             };  
 
         case '.info':
             return {
                 text: 'Hola, soy un bot creado por Edwardofc',
-                imagePath: null // No hay imagen para este comando
+                imagePath: './images/info.png' // No hay imagen para este comando
             };
 
         default:
