@@ -1,31 +1,30 @@
 import pkg from 'whatsapp-web.js'; // Importar whatsapp-web.js
 import qrcode from 'qrcode-terminal'; // Importar qrcode-terminal
+import fs from 'fs'; // Importar fs para manejar archivos
 
 const { Client, LocalAuth } = pkg; // Desestructurar Client y LocalAuth
 
-// Crear una sesión con whatsapp-web y la guarda localmente para autenticarse solo una vez por QR
 const client = new Client({
     authStrategy: new LocalAuth() // Usar autenticación local
 });
 
-// Genera el código QR para conectarse a whatsapp-web
 client.on('qr', qr => {
     qrcode.generate(qr, { small: true });
 });
 
-// Si la conexión es exitosa muestra el mensaje de conexión exitosa
 client.on('ready', () => {
     console.log('Conexión exitosa');
 });
 
-// Aquí sucede la magia, escucha los mensajes y aquí es donde se manipula lo que queremos que haga el bot
 client.on('message', async message => {
     console.log(message.body);
     
-    // Verifica si el mensaje comienza con /, ., o #
     if (message.body.startsWith('/') || message.body.startsWith('.') || message.body.startsWith('#')) {
         const response = getMenu(message.body);
-        await message.reply(response); // Asegúrate de usar await aquí
+        await message.reply(response.text); // Responder con texto
+        if (response.imagePath) {
+            await client.sendMessage(message.from, fs.readFileSync(response.imagePath), { caption: 'Aquí tienes la imagen' }); // Enviar imagen
+        }
     }
 });
 
@@ -33,91 +32,104 @@ client.on('message', async message => {
 function getMenu(command) {
     switch(command) {
         case '.menu':
-            return `
-          *Menu servidor*
-🜲 Antes de iniciar coloque el (.)
-ᚐ҉ᚐ .rangos
-ᚐ҉ᚐ .ip
-ᚐ҉ᚐ .tienda
-ᚐ҉ᚐ .comandos
-ᚐ҉ᚐ .dc
-ᚐ҉ᚐ .comunidad
-ᚐ҉ᚐ .canales
-ᚐ҉ᚐ .strems
-ᚐ҉ᚐ .donar
-ᚐ҉ᚐ .info
-pronto más menú
-Att: CEO`;
+            return {
+                text: `
+                *Menu servidor*
+                🜲 Antes de iniciar coloque el (.)
+                ᚐ҉ᚐ .rangos
+                ᚐ҉ᚐ .ip
+                ᚐ҉ᚐ .tienda
+                ᚐ҉ᚐ .comandos
+                ᚐ҉ᚐ .dc
+                ᚐ҉ᚐ .comunidad
+                ᚐ҉ᚐ .canales
+                ᚐ҉ᚐ .strems
+                ᚐ҉ᚐ .donar
+                ᚐ҉ᚐ .info
+                pronto más menú
+                Att: CEO`,
+                imagePath: null // No hay imagen para este comando
+            };
 
         case '.rangos':
-            return `
-*Rangos-Oficiales*
-
-*Rangos Staff*
-✓ C.E.O
-✓ ADMIN
-✓ MOD
-✓ HELPER
-
-*Rangos Olimpo*
-✓ Zeus   /   Hera
-✓ Apolo  /   Atenea
-✓ Ares   /   Afrodita
-
-*Rangos Inframundo*
-✓ Hades   /   Perséfone
-✓ Tanatos /   Freya
-✓ Quimera /   Hestia
-✓ Cerbero /   Demeter
-
-*Rangos Streams*
-⚫ Tiktok
-🟣 Twitch
-🟢 Kick`;
+            return {
+                text: `
+                *Rangos-Oficiales*
+                
+                *Rangos Staff*
+                ✓ C.E.O
+                ✓ ADMIN
+                ✓ MOD
+                ✓ HELPER`,
+                imagePath: './images/rangos.png' // Ruta a la imagen de rangos
+            };
 
         case '.ip':
-            return 'Pronto la ip';
+            return {
+                text: 'Pronto la ip',
+                imagePath: null // No hay imagen para este comando
+            };
 
         case '.tienda':
-            return 'En unos días estará la tienda';
+            return {
+                text: 'En unos días estará la tienda',
+                imagePath: './images/tienda.png' // Ruta a la imagen de la tienda
+            };
 
         case '.comandos':
-            return 'Información sobre el bot: Este bot puede responder a tus comandos.';
+            return {
+                text: 'Información sobre el bot: Este bot puede responder a tus comandos.',
+                imagePath: null // No hay imagen para este comando
+            };
 
         case '.dc':
-            return 'Estamos en proceso';
+            return {
+                text: 'Estamos en proceso',
+                imagePath: null // No hay imagen para este comando
+            };
 
         case '.comunidad':
-            return 'Estamos en proceso';
+            return {
+                text: 'Estamos en proceso',
+                imagePath: null // No hay imagen para este comando
+            };
 
         case '.canales':
-            return 'Estamos en proceso';   
-                
+            return {
+                text: 'Estamos en proceso',
+                imagePath: null // No hay imagen para este comando
+            };   
+
         case '.strems':
-            return `
-       *Streaming oficiales*         
-➲ Canal de Twitch
-  ⤷ Enlace
+            return {
+                text: `
+                *Streaming oficiales*         
+                ➲ Canal de Twitch
+                  ⤷ Enlace
 
-➲ Canal de Youtube
-  ⤷ Enlace
-
-➲ Canal de Kick
-  ⤷ Enlace
-
-➲ Canal de TikTok
-  ⤷ Enlace`;
+                ➲ Canal de Youtube
+                  ⤷ Enlace`,
+                imagePath: './images/streams.png' // Ruta a la imagen de streams
+            };
 
         case '.donar':
-            return 'Estamos en proceso';  
-                
+            return {
+                text: 'Estamos en proceso',
+                imagePath: null // No hay imagen para este comando
+            };  
+
         case '.info':
-            return 'Hola, soy un bot creado por Edwardofc';
+            return {
+                text: 'Hola, soy un bot creado por Edwardofc',
+                imagePath: null // No hay imagen para este comando
+            };
 
         default:
-            return 'Comando no reconocido. Usa .menu para ver los comandos disponibles.';
+            return {
+              text: 'Comando no reconocido. Usa .menu para ver los comandos disponibles.',
+              imagePath: null // No hay imagen para comandos no reconocidos 
+          };
     }
 }
 
-// Inicializar el cliente
 client.initialize();
