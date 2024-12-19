@@ -4,7 +4,7 @@ global.owner = [
 ];
 
 // Configuraciones adicionales
-global.packname = '❜︧༷︧➭ િ𝐆єห͓૯ઽíន λł ી▵°⬸';
+global.packname = '❜︧༷︧➭ Earthnovacraftł ી▵°⬸';
 global.author = '@Edwardofc';
 global.namebot = 'Earthnovacraft';
 global.wait = '*Earthnovacraft-mD*';
