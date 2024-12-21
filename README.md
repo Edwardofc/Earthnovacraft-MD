@@ -1,7 +1,7 @@
 <a href="https://dahs.hostingpy.shop/login"><img src="https://telegra.ph/file/4bd3d8d14e5683073d4f3.jpg" height="125px"></a>
 ### Hosting Py
 
-- **Pagina Oficial De Vortexus:** [`HostingPy`](https://dahs.hostingpy.shop/login)
+- **Pagina Oficial De HostinPy:** [`HostingPy`](https://dahs.hostingpy.shop/login)
 - **Contacto:** [`Aquí`](https://wa.me/+595976126756) 
 - **Canal de WhatsApp:** [`Aquí`](jd)
 
