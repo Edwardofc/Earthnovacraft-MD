@@ -1,26 +1,17 @@
-<a href="https://dahs.hostingpy.shop/login"><img src="https://telegra.ph/file/4bd3d8d14e5683073d4f3.jpg" height="125px"></a>
-### Hosting Py
+<a href="https://dahs.hostingpy.shop/"><img src="https://files.catbox.moe/lr92z2.jpg" height="130px"></a>
 
-- **Pagina Oficial De HostinPy:** [`HostingPy`](https://dahs.hostingpy.shop/login)
-- **Contacto:** [`Aquí`](https://wa.me/+595976126756) 
-- **Canal de WhatsApp:** [`Aquí`](jd)
+<details>
+ <summary><b>Click para mostrar los links</b></summary>
 
-- [x] **Configuración** <details><summary>**Ajustes del Servidor - Earthnovacraft-MD**</summary><img src="https://telegra.ph/file/524ab6e15b912d9cdb777.jpg"></details>
-------------------
-
-- ### ☂️ Activar En Heroku ☂️
-para usuarios del heroku
-
-[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy?template=https://github.com/Edwardofc/Atro-Lite-Bot-MD1)
-
-#### HEROKU BUILDPACK
-| BUILDACKS | LINK |
-|--------|--------|
-| **FFMPEG** |[CLICK](https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest) |
-| **IMAGEMAGICK** | [CLICK](https://github.com/DuckyTeam/heroku-buildpack-imagemagick) |
+- **Dashboard:** [`Aquí`](https://dahs.hostingpy.shop/)
+- **Panel:** [`Aquí`](https://panel.hostingpy.shop/)
+- **Registrarse:** [`Aquí`](https://dahs.hostingpy.shop/register)
+- **Canal de WhatsApp:** [`Aquí`](https://whatsapp.com/channel/0029Vak4e1R4NVifmh8Tvi3q)
+- **Comunidad:** [`Aquí`](https://chat.whatsapp.com/HT9YFbWTuqO0DQrq6Xxhvx)
+- **Contacto:** [`AdrianOficial`](https://wa.me/595976126756)
+</details>
 
 ***
-
 </details>
 
 ### PROPIETARIO DEL BOT
