@@ -1,7 +1,7 @@
 ## Earthnovacraft-MD ✨
 
 <p align="center">
-<img src="https://telegra.ph/file/d7e24ffa346e3ed2d0c37.jpg" alt="" width="900"/>
+<img src="https://files.fm/u/7vk3p7f65r" alt="" width="900"/>
 </p> 
 
 <a href="https://dahs.hostingpy.shop/"><img src="https://files.catbox.moe/lr92z2.jpg" height="130px"></a>
