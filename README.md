@@ -1,14 +1,11 @@
-<a href="https://vortexuscloud.com"><img src="https://telegra.ph/file/4bd3d8d14e5683073d4f3.jpg" height="125px"></a>
-### vortexus cloud
+<a href="https://dahs.hostingpy.shop/login"><img src="https://telegra.ph/file/4bd3d8d14e5683073d4f3.jpg" height="125px"></a>
+### Hosting Py
 
-- **Pagina Oficial De Vortexus:** [`Vortexuscloud`](https://vortexuscloud.com)
-- **Crear cuenta en la Dashboard:** [`Dashboard`](https://youtu.be/JUg7DWUY6_Y?si=DHwk9dwjvWdPEIBJ)
-- **Dashboard:** [`Dash`](https://dash.vortexuscloud.com)
-- **Panel:** [`Aquí`](https://panel.vortexuscloud.com)
+- **Pagina Oficial De Vortexus:** [`Vortexuscloud`](https://dahs.hostingpy.shop/login)
 - **Contacto:** [`Aquí`](https://wa.me/258858119033) 
-- **Canal de WhatsApp:** [`Aquí`](https://whatsapp.com/channel/0029Va8ZD6O3mFXxTPl1m13A)
+- **Canal de WhatsApp:** [`Aquí`](jd)
 
-- [x] **Configuración** <details><summary>**Ajustes del Servidor - Atro-Lite-Bot-MD**</summary><img src="https://telegra.ph/file/524ab6e15b912d9cdb777.jpg"></details>
+- [x] **Configuración** <details><summary>**Ajustes del Servidor - Earthnovacraft-MD**</summary><img src="https://telegra.ph/file/524ab6e15b912d9cdb777.jpg"></details>
 ------------------
 
 - ### ☂️ Activar En Heroku ☂️
