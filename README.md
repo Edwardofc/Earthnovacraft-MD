@@ -1,8 +1,8 @@
 <a href="https://dahs.hostingpy.shop/login"><img src="https://telegra.ph/file/4bd3d8d14e5683073d4f3.jpg" height="125px"></a>
 ### Hosting Py
 
-- **Pagina Oficial De Vortexus:** [`Vortexuscloud`](https://dahs.hostingpy.shop/login)
-- **Contacto:** [`Aquí`](https://wa.me/258858119033) 
+- **Pagina Oficial De Vortexus:** [`HostingPy`](https://dahs.hostingpy.shop/login)
+- **Contacto:** [`Aquí`](https://wa.me/+595976126756) 
 - **Canal de WhatsApp:** [`Aquí`](jd)
 
 - [x] **Configuración** <details><summary>**Ajustes del Servidor - Earthnovacraft-MD**</summary><img src="https://telegra.ph/file/524ab6e15b912d9cdb777.jpg"></details>
